@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94FA117C23546A4200AA857A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA117B23546A4200AA857A /* AppDelegate.swift */; };
+		94FA117E23546A4200AA857A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA117D23546A4200AA857A /* SceneDelegate.swift */; };
+		94FA118023546A4200AA857A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA117F23546A4200AA857A /* ViewController.swift */; };
+		94FA118323546A4200AA857A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FA118123546A4200AA857A /* Main.storyboard */; };
+		94FA118523546A4400AA857A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FA118423546A4400AA857A /* Assets.xcassets */; };
+		94FA118823546A4400AA857A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FA118623546A4400AA857A /* LaunchScreen.storyboard */; };
+		94FA119323546A4400AA857A /* GtyBluetoothTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA119223546A4400AA857A /* GtyBluetoothTestTests.swift */; };
+		94FA119E23546A4400AA857A /* GtyBluetoothTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA119D23546A4400AA857A /* GtyBluetoothTestUITests.swift */; };
+		94FA11AE23546A8B00AA857A /* CBleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11AB23546A8A00AA857A /* CBleParser.swift */; };
+		94FA11B023546A8B00AA857A /* ReceiveDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11AD23546A8A00AA857A /* ReceiveDataCenter.swift */; };
+		94FA11B923546B2500AA857A /* GtyParserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B123546B2400AA857A /* GtyParserSession.swift */; };
+		94FA11BA23546B2500AA857A /* GtyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B223546B2400AA857A /* GtyConstants.swift */; };
+		94FA11BB23546B2500AA857A /* GtyBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B323546B2400AA857A /* GtyBaseParser.swift */; };
+		94FA11BC23546B2500AA857A /* GtyConnecter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B423546B2400AA857A /* GtyConnecter.swift */; };
+		94FA11BD23546B2500AA857A /* GtyCentralProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B523546B2400AA857A /* GtyCentralProxy.swift */; };
+		94FA11BE23546B2500AA857A /* GtyDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B623546B2400AA857A /* GtyDiscovery.swift */; };
+		94FA11BF23546B2500AA857A /* GtyCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B723546B2400AA857A /* GtyCentralManager.swift */; };
+		94FA11C023546B2500AA857A /* GtyScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA11B823546B2400AA857A /* GtyScanner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94FA118F23546A4400AA857A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94FA117023546A4200AA857A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94FA117723546A4200AA857A;
+			remoteInfo = GtyBluetoothTest;
+		};
+		94FA119A23546A4400AA857A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94FA117023546A4200AA857A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94FA117723546A4200AA857A;
+			remoteInfo = GtyBluetoothTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94FA117823546A4200AA857A /* GtyBluetoothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GtyBluetoothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FA117B23546A4200AA857A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94FA117D23546A4200AA857A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94FA117F23546A4200AA857A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94FA118223546A4200AA857A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94FA118423546A4400AA857A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94FA118723546A4400AA857A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94FA118923546A4400AA857A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FA118E23546A4400AA857A /* GtyBluetoothTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GtyBluetoothTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FA119223546A4400AA857A /* GtyBluetoothTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GtyBluetoothTestTests.swift; sourceTree = "<group>"; };
+		94FA119423546A4400AA857A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FA119923546A4400AA857A /* GtyBluetoothTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GtyBluetoothTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FA119D23546A4400AA857A /* GtyBluetoothTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GtyBluetoothTestUITests.swift; sourceTree = "<group>"; };
+		94FA119F23546A4400AA857A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FA11AB23546A8A00AA857A /* CBleParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBleParser.swift; sourceTree = "<group>"; };
+		94FA11AD23546A8A00AA857A /* ReceiveDataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiveDataCenter.swift; sourceTree = "<group>"; };
+		94FA11B123546B2400AA857A /* GtyParserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyParserSession.swift; sourceTree = "<group>"; };
+		94FA11B223546B2400AA857A /* GtyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyConstants.swift; sourceTree = "<group>"; };
+		94FA11B323546B2400AA857A /* GtyBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyBaseParser.swift; sourceTree = "<group>"; };
+		94FA11B423546B2400AA857A /* GtyConnecter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyConnecter.swift; sourceTree = "<group>"; };
+		94FA11B523546B2400AA857A /* GtyCentralProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyCentralProxy.swift; sourceTree = "<group>"; };
+		94FA11B623546B2400AA857A /* GtyDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyDiscovery.swift; sourceTree = "<group>"; };
+		94FA11B723546B2400AA857A /* GtyCentralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyCentralManager.swift; sourceTree = "<group>"; };
+		94FA11B823546B2400AA857A /* GtyScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GtyScanner.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94FA117523546A4200AA857A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FA118B23546A4400AA857A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FA119623546A4400AA857A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94FA116F23546A4200AA857A = {
+			isa = PBXGroup;
+			children = (
+				94FA117A23546A4200AA857A /* GtyBluetoothTest */,
+				94FA119123546A4400AA857A /* GtyBluetoothTestTests */,
+				94FA119C23546A4400AA857A /* GtyBluetoothTestUITests */,
+				94FA117923546A4200AA857A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94FA117923546A4200AA857A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94FA117823546A4200AA857A /* GtyBluetoothTest.app */,
+				94FA118E23546A4400AA857A /* GtyBluetoothTestTests.xctest */,
+				94FA119923546A4400AA857A /* GtyBluetoothTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94FA117A23546A4200AA857A /* GtyBluetoothTest */ = {
+			isa = PBXGroup;
+			children = (
+				94FA11B323546B2400AA857A /* GtyBaseParser.swift */,
+				94FA11B723546B2400AA857A /* GtyCentralManager.swift */,
+				94FA11B523546B2400AA857A /* GtyCentralProxy.swift */,
+				94FA11B423546B2400AA857A /* GtyConnecter.swift */,
+				94FA11B223546B2400AA857A /* GtyConstants.swift */,
+				94FA11B623546B2400AA857A /* GtyDiscovery.swift */,
+				94FA11B123546B2400AA857A /* GtyParserSession.swift */,
+				94FA11B823546B2400AA857A /* GtyScanner.swift */,
+				94FA11AB23546A8A00AA857A /* CBleParser.swift */,
+				94FA11AD23546A8A00AA857A /* ReceiveDataCenter.swift */,
+				94FA117B23546A4200AA857A /* AppDelegate.swift */,
+				94FA117D23546A4200AA857A /* SceneDelegate.swift */,
+				94FA117F23546A4200AA857A /* ViewController.swift */,
+				94FA118123546A4200AA857A /* Main.storyboard */,
+				94FA118423546A4400AA857A /* Assets.xcassets */,
+				94FA118623546A4400AA857A /* LaunchScreen.storyboard */,
+				94FA118923546A4400AA857A /* Info.plist */,
+			);
+			path = GtyBluetoothTest;
+			sourceTree = "<group>";
+		};
+		94FA119123546A4400AA857A /* GtyBluetoothTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				94FA119223546A4400AA857A /* GtyBluetoothTestTests.swift */,
+				94FA119423546A4400AA857A /* Info.plist */,
+			);
+			path = GtyBluetoothTestTests;
+			sourceTree = "<group>";
+		};
+		94FA119C23546A4400AA857A /* GtyBluetoothTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94FA119D23546A4400AA857A /* GtyBluetoothTestUITests.swift */,
+				94FA119F23546A4400AA857A /* Info.plist */,
+			);
+			path = GtyBluetoothTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94FA117723546A4200AA857A /* GtyBluetoothTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FA11A223546A4400AA857A /* Build configuration list for PBXNativeTarget "GtyBluetoothTest" */;
+			buildPhases = (
+				94FA117423546A4200AA857A /* Sources */,
+				94FA117523546A4200AA857A /* Frameworks */,
+				94FA117623546A4200AA857A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GtyBluetoothTest;
+			productName = GtyBluetoothTest;
+			productReference = 94FA117823546A4200AA857A /* GtyBluetoothTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94FA118D23546A4400AA857A /* GtyBluetoothTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FA11A523546A4400AA857A /* Build configuration list for PBXNativeTarget "GtyBluetoothTestTests" */;
+			buildPhases = (
+				94FA118A23546A4400AA857A /* Sources */,
+				94FA118B23546A4400AA857A /* Frameworks */,
+				94FA118C23546A4400AA857A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94FA119023546A4400AA857A /* PBXTargetDependency */,
+			);
+			name = GtyBluetoothTestTests;
+			productName = GtyBluetoothTestTests;
+			productReference = 94FA118E23546A4400AA857A /* GtyBluetoothTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94FA119823546A4400AA857A /* GtyBluetoothTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94FA11A823546A4400AA857A /* Build configuration list for PBXNativeTarget "GtyBluetoothTestUITests" */;
+			buildPhases = (
+				94FA119523546A4400AA857A /* Sources */,
+				94FA119623546A4400AA857A /* Frameworks */,
+				94FA119723546A4400AA857A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94FA119B23546A4400AA857A /* PBXTargetDependency */,
+			);
+			name = GtyBluetoothTestUITests;
+			productName = GtyBluetoothTestUITests;
+			productReference = 94FA119923546A4400AA857A /* GtyBluetoothTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94FA117023546A4200AA857A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "高天元";
+				TargetAttributes = {
+					94FA117723546A4200AA857A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					94FA118D23546A4400AA857A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 94FA117723546A4200AA857A;
+					};
+					94FA119823546A4400AA857A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 94FA117723546A4200AA857A;
+					};
+				};
+			};
+			buildConfigurationList = 94FA117323546A4200AA857A /* Build configuration list for PBXProject "GtyBluetoothTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94FA116F23546A4200AA857A;
+			productRefGroup = 94FA117923546A4200AA857A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94FA117723546A4200AA857A /* GtyBluetoothTest */,
+				94FA118D23546A4400AA857A /* GtyBluetoothTestTests */,
+				94FA119823546A4400AA857A /* GtyBluetoothTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94FA117623546A4200AA857A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FA118823546A4400AA857A /* LaunchScreen.storyboard in Resources */,
+				94FA118523546A4400AA857A /* Assets.xcassets in Resources */,
+				94FA118323546A4200AA857A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FA118C23546A4400AA857A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FA119723546A4400AA857A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94FA117423546A4200AA857A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FA118023546A4200AA857A /* ViewController.swift in Sources */,
+				94FA11BE23546B2500AA857A /* GtyDiscovery.swift in Sources */,
+				94FA11BF23546B2500AA857A /* GtyCentralManager.swift in Sources */,
+				94FA117C23546A4200AA857A /* AppDelegate.swift in Sources */,
+				94FA11BB23546B2500AA857A /* GtyBaseParser.swift in Sources */,
+				94FA11B923546B2500AA857A /* GtyParserSession.swift in Sources */,
+				94FA11BA23546B2500AA857A /* GtyConstants.swift in Sources */,
+				94FA11AE23546A8B00AA857A /* CBleParser.swift in Sources */,
+				94FA11B023546A8B00AA857A /* ReceiveDataCenter.swift in Sources */,
+				94FA117E23546A4200AA857A /* SceneDelegate.swift in Sources */,
+				94FA11C023546B2500AA857A /* GtyScanner.swift in Sources */,
+				94FA11BC23546B2500AA857A /* GtyConnecter.swift in Sources */,
+				94FA11BD23546B2500AA857A /* GtyCentralProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FA118A23546A4400AA857A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FA119323546A4400AA857A /* GtyBluetoothTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94FA119523546A4400AA857A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FA119E23546A4400AA857A /* GtyBluetoothTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94FA119023546A4400AA857A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94FA117723546A4200AA857A /* GtyBluetoothTest */;
+			targetProxy = 94FA118F23546A4400AA857A /* PBXContainerItemProxy */;
+		};
+		94FA119B23546A4400AA857A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94FA117723546A4200AA857A /* GtyBluetoothTest */;
+			targetProxy = 94FA119A23546A4400AA857A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94FA118123546A4200AA857A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94FA118223546A4200AA857A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94FA118623546A4400AA857A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94FA118723546A4400AA857A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94FA11A023546A4400AA857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94FA11A123546A4400AA857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94FA11A323546A4400AA857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD77L8U6UJ;
+				INFOPLIST_FILE = GtyBluetoothTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94FA11A423546A4400AA857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD77L8U6UJ;
+				INFOPLIST_FILE = GtyBluetoothTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94FA11A623546A4400AA857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD77L8U6UJ;
+				INFOPLIST_FILE = GtyBluetoothTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GtyBluetoothTest.app/GtyBluetoothTest";
+			};
+			name = Debug;
+		};
+		94FA11A723546A4400AA857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD77L8U6UJ;
+				INFOPLIST_FILE = GtyBluetoothTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GtyBluetoothTest.app/GtyBluetoothTest";
+			};
+			name = Release;
+		};
+		94FA11A923546A4400AA857A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD77L8U6UJ;
+				INFOPLIST_FILE = GtyBluetoothTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GtyBluetoothTest;
+			};
+			name = Debug;
+		};
+		94FA11AA23546A4400AA857A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD77L8U6UJ;
+				INFOPLIST_FILE = GtyBluetoothTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GtyBluetoothTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94FA117323546A4200AA857A /* Build configuration list for PBXProject "GtyBluetoothTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FA11A023546A4400AA857A /* Debug */,
+				94FA11A123546A4400AA857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FA11A223546A4400AA857A /* Build configuration list for PBXNativeTarget "GtyBluetoothTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FA11A323546A4400AA857A /* Debug */,
+				94FA11A423546A4400AA857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FA11A523546A4400AA857A /* Build configuration list for PBXNativeTarget "GtyBluetoothTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FA11A623546A4400AA857A /* Debug */,
+				94FA11A723546A4400AA857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94FA11A823546A4400AA857A /* Build configuration list for PBXNativeTarget "GtyBluetoothTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94FA11A923546A4400AA857A /* Debug */,
+				94FA11AA23546A4400AA857A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94FA117023546A4200AA857A /* Project object */;
+}

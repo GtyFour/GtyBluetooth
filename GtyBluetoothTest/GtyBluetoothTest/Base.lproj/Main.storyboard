@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GtyBluetoothTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-DD-Vcd">
+                                <rect key="frame" x="0.0" y="767" width="138" height="30"/>
+                                <state key="normal" title="Scan"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-jY-sEm">
+                                <rect key="frame" x="138" y="767" width="138" height="30"/>
+                                <state key="normal" title="Write"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tq5-NF-zXk">
+                                <rect key="frame" x="276" y="767" width="138" height="30"/>
+                                <state key="normal" title="Disconnect"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-4c-hWb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tzP-jY-sEm" firstAttribute="top" secondItem="yTo-DD-Vcd" secondAttribute="top" id="4ja-DK-rFE"/>
+                            <constraint firstItem="tzP-jY-sEm" firstAttribute="width" secondItem="yTo-DD-Vcd" secondAttribute="width" id="9x5-dQ-X4g"/>
+                            <constraint firstItem="Q50-4c-hWb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Awy-YA-DBG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q50-4c-hWb" secondAttribute="bottom" constant="100" id="CS5-iD-gvU"/>
+                            <constraint firstItem="tq5-NF-zXk" firstAttribute="width" secondItem="tzP-jY-sEm" secondAttribute="width" id="Cve-Vw-BVl"/>
+                            <constraint firstItem="tq5-NF-zXk" firstAttribute="trailing" secondItem="Q50-4c-hWb" secondAttribute="trailing" id="J0B-Tk-sfH"/>
+                            <constraint firstItem="yTo-DD-Vcd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KHd-ke-UND"/>
+                            <constraint firstItem="tzP-jY-sEm" firstAttribute="top" secondItem="Q50-4c-hWb" secondAttribute="bottom" constant="5" id="aHp-CY-iDh"/>
+                            <constraint firstItem="tzP-jY-sEm" firstAttribute="top" secondItem="tq5-NF-zXk" secondAttribute="top" id="bA0-NX-Tbg"/>
+                            <constraint firstItem="Q50-4c-hWb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="enH-TL-ejB"/>
+                            <constraint firstItem="tq5-NF-zXk" firstAttribute="leading" secondItem="tzP-jY-sEm" secondAttribute="trailing" id="rcV-5d-34o"/>
+                            <constraint firstItem="tzP-jY-sEm" firstAttribute="leading" secondItem="yTo-DD-Vcd" secondAttribute="trailing" id="vV0-yL-6Yx"/>
+                            <constraint firstItem="Q50-4c-hWb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="ygo-CU-b0M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="DisconnectBtn" destination="tq5-NF-zXk" id="Zlf-MA-RJa"/>
+                        <outlet property="ScanBtn" destination="yTo-DD-Vcd" id="UG3-jR-atm"/>
+                        <outlet property="WriteBtn" destination="tzP-jY-sEm" id="9jr-Ix-o7e"/>
+                        <outlet property="tableView" destination="Q50-4c-hWb" id="1Sg-ho-VA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
