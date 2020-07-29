@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940CDDAF237590380012475F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940CDDAE237590380012475F /* SceneDelegate.swift */; };
+		94EB3063236FFE5C00506A53 /* GHConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EB3062236FFE5C00506A53 /* GHConsole.swift */; };
 		94FA117C23546A4200AA857A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA117B23546A4200AA857A /* AppDelegate.swift */; };
-		94FA117E23546A4200AA857A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA117D23546A4200AA857A /* SceneDelegate.swift */; };
 		94FA118023546A4200AA857A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA117F23546A4200AA857A /* ViewController.swift */; };
 		94FA118323546A4200AA857A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FA118123546A4200AA857A /* Main.storyboard */; };
 		94FA118523546A4400AA857A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FA118423546A4400AA857A /* Assets.xcassets */; };
@@ -45,9 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		940CDDAE237590380012475F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94EB3062236FFE5C00506A53 /* GHConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHConsole.swift; sourceTree = "<group>"; };
 		94FA117823546A4200AA857A /* GtyBluetoothTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GtyBluetoothTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FA117B23546A4200AA857A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94FA117D23546A4200AA857A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		94FA117F23546A4200AA857A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94FA118223546A4200AA857A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FA118423546A4400AA857A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,8 @@
 		94FA117A23546A4200AA857A /* GtyBluetoothTest */ = {
 			isa = PBXGroup;
 			children = (
+				940CDDAE237590380012475F /* SceneDelegate.swift */,
+				94EB3062236FFE5C00506A53 /* GHConsole.swift */,
 				94FA11B323546B2400AA857A /* GtyBaseParser.swift */,
 				94FA11B723546B2400AA857A /* GtyCentralManager.swift */,
 				94FA11B523546B2400AA857A /* GtyCentralProxy.swift */,
@@ -130,7 +134,6 @@
 				94FA11AB23546A8A00AA857A /* CBleParser.swift */,
 				94FA11AD23546A8A00AA857A /* ReceiveDataCenter.swift */,
 				94FA117B23546A4200AA857A /* AppDelegate.swift */,
-				94FA117D23546A4200AA857A /* SceneDelegate.swift */,
 				94FA117F23546A4200AA857A /* ViewController.swift */,
 				94FA118123546A4200AA857A /* Main.storyboard */,
 				94FA118423546A4400AA857A /* Assets.xcassets */,
@@ -226,6 +229,7 @@
 				TargetAttributes = {
 					94FA117723546A4200AA857A = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					94FA118D23546A4400AA857A = {
 						CreatedOnToolsVersion = 11.0;
@@ -290,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94FA118023546A4200AA857A /* ViewController.swift in Sources */,
+				940CDDAF237590380012475F /* SceneDelegate.swift in Sources */,
 				94FA11BE23546B2500AA857A /* GtyDiscovery.swift in Sources */,
 				94FA11BF23546B2500AA857A /* GtyCentralManager.swift in Sources */,
 				94FA117C23546A4200AA857A /* AppDelegate.swift in Sources */,
@@ -298,7 +303,7 @@
 				94FA11BA23546B2500AA857A /* GtyConstants.swift in Sources */,
 				94FA11AE23546A8B00AA857A /* CBleParser.swift in Sources */,
 				94FA11B023546A8B00AA857A /* ReceiveDataCenter.swift in Sources */,
-				94FA117E23546A4200AA857A /* SceneDelegate.swift in Sources */,
+				94EB3063236FFE5C00506A53 /* GHConsole.swift in Sources */,
 				94FA11C023546B2500AA857A /* GtyScanner.swift in Sources */,
 				94FA11BC23546B2500AA857A /* GtyConnecter.swift in Sources */,
 				94FA11BD23546B2500AA857A /* GtyCentralProxy.swift in Sources */,
@@ -474,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AD77L8U6UJ;
 				INFOPLIST_FILE = GtyBluetoothTest/Info.plist;
@@ -483,6 +489,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AD77L8U6UJ;
 				INFOPLIST_FILE = GtyBluetoothTest/Info.plist;
@@ -501,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.GtyFour.GtyBluetoothTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

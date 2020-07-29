@@ -15,18 +15,19 @@ class CBleParser: GtyBaseParser {
 
     func writeDataWithResponse(_ data: Data) {
         do {
-            print(data)
+//            print(data)
+            lock.lock()
             try super.writeData(data, characterUUIDStr: CBleParser.writeCharacterUUIDStr, withResponse: true)
-            usleep(15000)
+//            usleep(15000)
         } catch let error {
             print("[Error: ]__Write Data Error    " + "\(error)")
         }
     }
     func writeDataWithResponseWithNumber(_ data: Data, peripheralNumber:Int) {
         do {
-            print(data)
+//            print(data)
             try super.writeDataWithNumber(data, characterUUIDStr: CBleParser.writeCharacterUUIDStr, withResponse: true, peripheralNumber)
-            usleep(15000)
+//            //usleep(15000)
         } catch let error {
             print("[Error: ]__Write Data Error    " + "\(error)")
         }
@@ -34,7 +35,7 @@ class CBleParser: GtyBaseParser {
     func writeDataWithoutResponse(_ data: Data) {
         do {
             try super.writeData(data, characterUUIDStr: CBleParser.writeCharacterUUIDStr, withResponse: false)
-            usleep(15000)
+//            usleep(15000)
         } catch let error {
             print("[Error: ]__Write Data Error    " + "\(error)")
         }
@@ -42,7 +43,7 @@ class CBleParser: GtyBaseParser {
     func writeDataWithoutResponseWithNumber(_ data: Data, peripheralNumber:Int) {
         do {
             try super.writeDataWithNumber(data, characterUUIDStr: CBleParser.writeCharacterUUIDStr, withResponse: true, peripheralNumber)
-            usleep(15000)
+//            usleep(15000)
         } catch let error {
             print("[Error: ]__Write Data Error    " + "\(error)")
         }
